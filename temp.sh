@@ -7,4 +7,9 @@ do
 done
 
 echo "exec"
-/usr/exec/procs_watcher
+nohup /usr/exec/procs_watcher &
+
+while true;
+do
+    sleep 1;
+done
